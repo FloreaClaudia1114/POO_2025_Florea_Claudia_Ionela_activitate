@@ -22,13 +22,13 @@ public:
 		preturiMedicamente = nullptr;
 	}
 
-	
+
 
 	Farmacie(int nrMedicamente, const char* adresa, float* preturiMedicamente) :CODUnic(contorCod++) {
 		this->adresa = new char[strlen(adresa) + 1];
 		strcpy(this->adresa, adresa);
 		this->nrMedicamente = nrMedicamente;
-	
+
 
 		if (nrMedicamente > 0) {
 			this->preturiMedicamente = new float[nrMedicamente];
@@ -45,7 +45,7 @@ public:
 		this->adresa = new char[strlen(f.adresa) + 1];
 		strcpy(this->adresa, f.adresa);
 		this->nrMedicamente = f.nrMedicamente;
-		
+
 
 		if (nrMedicamente > 0) {
 			this->preturiMedicamente = new float[f.nrMedicamente];
@@ -55,7 +55,7 @@ public:
 		}
 		else preturiMedicamente = nullptr;
 	}
-	
+
 
 	~Farmacie() {
 		delete[]this->adresa;
@@ -74,7 +74,7 @@ public:
 
 	}
 
-	
+
 
 	int getnrMedicamente() {
 		return nrMedicamente;
@@ -99,18 +99,18 @@ public:
 		}
 		else preturiMedicamente = nullptr;
 	}
-	
+
 
 	Farmacie& operator=(Farmacie& f) {
-	
+
 		delete[]this->adresa;
 		delete[]this->preturiMedicamente;
-		
+
 
 		this->adresa = new char[strlen(f.adresa) + 1];
 		strcpy(this->adresa, f.adresa);
 		this->nrMedicamente = f.nrMedicamente;
-		
+
 
 		if (nrMedicamente > 0) {
 			this->preturiMedicamente = new float[f.nrMedicamente];
@@ -119,18 +119,18 @@ public:
 			}
 		}
 		else preturiMedicamente = nullptr;
-        return *this;
+		return *this;
 	}
 
-	
+
 	friend ostream& operator <<(ostream& out, const Farmacie& f) {
 		out << f.CODUnic << endl;
 		out << f.adresa << endl;
 		out << f.nrMedicamente << endl;
-		for (int i = 0;i > f.nrMedicamente; i++) {
+		for (int i = 0;i < f.nrMedicamente; i++) {
 			out << f.preturiMedicamente[i] << endl;
 		}
-     return out;
+		return out;
 	}
 
 
@@ -138,10 +138,10 @@ public:
 int Farmacie::contorCod = 0;
 
 int main() {
-    Farmacie f1;
+	Farmacie f1;
 	cout << f1 << endl;
-	
+
 	Farmacie f2(2, "Strada Compex", new float[2] {25, 100});
 	cout << f2 << endl;
-	
+
 }
