@@ -27,5 +27,8 @@
     <ClCompile Include="Bilet_Farmacie2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Bilet_Autobuz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

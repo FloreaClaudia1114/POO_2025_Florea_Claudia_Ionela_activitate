@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bilet_Autobuz.cpp" />
     <ClCompile Include="Bilet_Avion_test.cpp" />
     <ClCompile Include="Bilet_Farmacie.cpp" />
     <ClCompile Include="Bilet_Farmacie2.cpp" />
