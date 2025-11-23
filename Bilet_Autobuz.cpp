@@ -68,8 +68,7 @@ public:
 
 	}
 
-	//nr persoane imbarcate get si set 
-	//cand avem char* suntem obligati intotdeauna sa avem operatorul egal, must have!!1
+	
 
 	int getnrpersoaneImbarcate() {
 		return this->nrPersoaneImbarcate;
@@ -82,7 +81,7 @@ public:
 		}
 	}
 
-	// operatorul egal 
+	
 
 	Autobuz& operator=(const Autobuz& a) {
 		delete[]this->producator;
@@ -97,7 +96,6 @@ public:
 
 	}
 
-	//operatorul friend iostream plus ostream 
 
 	friend ostream& operator<<(ostream& out, Autobuz& a) {
 		out << a.idAutobuz << endl;
