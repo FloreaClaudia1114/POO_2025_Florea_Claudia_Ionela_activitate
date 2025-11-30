@@ -30,5 +30,8 @@
     <ClCompile Include="Bilet_Autobuz.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Bilet_Baterie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
