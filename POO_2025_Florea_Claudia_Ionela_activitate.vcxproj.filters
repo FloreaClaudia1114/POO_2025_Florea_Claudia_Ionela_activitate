@@ -36,5 +36,8 @@
     <ClCompile Include="Fisiere.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Farmacie_mostenire.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
